@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.tanayanotes.NoteDetails;
 import com.example.tanayanotes.R;
 
 import java.util.ArrayList;
@@ -40,10 +41,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.noteTitle.setText(titles.get(position));
         holder.noteContent.setText(content.get(position));
-        holder.mCardView.setCardBackgroundColor(holder.view.getResources().getColor(getRandomColor(),null));
+        final int code = getRandomColor();
+        holder.mCardView.setCardBackgroundColor(holder.view.getResources().getColor(code,null));
 
         holder.view.setOnClickListener((v) -> {
-            Toast.makeText(v.getContext(), "The item is clicked", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(v.getContext(), NoteDetails.class);
+            i.putExtra("title", titles.get(position));
+            i.putExtra("content", content.get(position));
+            i.putExtra("code",code);
+            v.getContext().startActivity(i);
+
 
         });
     }
