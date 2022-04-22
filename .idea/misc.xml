@@ -7,7 +7,12 @@
         <entry key="app/src/main/res/drawable/ic_baseline_event_note_24.xml" value="0.2015" />
         <entry key="app/src/main/res/drawable/ic_more_vert_black_24dp.xml" value="0.2015" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_note_details.xml" value="0.25" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/content_main2.xml" value="0.161231884057971" />
+        <entry key="app/src/main/res/layout/content_note_details.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="app/src/main/res/layout/note_view_layout.xml" value="0.25" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.25" />
